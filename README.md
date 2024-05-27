@@ -1,8 +1,9 @@
 Project Description:
 
-For this course project, I have developed a web application that addresses the OWASP top ten list of security flaws. The application is built using Node.js with Express.js for the backend and plain HTML, CSS, and JavaScript for the frontend. I have chosen to follow the 2021 OWASP list to ensure the project aligns with the latest security standards.
+For this course project, I have developed a web application using JavaScript that addresses the OWASP top ten list of security flaws. The application is built using Node.js with Express.js for the backend and plain HTML, CSS, and JavaScript for the frontend. I have chosen to follow the 2021 OWASP list to ensure the project aligns with the latest security standards.
 
 Installation Instructions:
+
 To run the application, follow these steps:
 
 Clone the repository to your local machine.
@@ -11,31 +12,28 @@ Install dependencies by running npm install.
 Set up environment variables as required (e.g., PORT, JWT_SECRET).
 Start the server by running npm start.
 Access the application in your browser at http://localhost:3000.
-Flaws and Fixes:
 
 FLAW 1: Injection
-Exact Source Link: https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/controllers/taskController.js
-Description: Lack of input validation in task creation allows for potential SQL injection attacks.
-Fix: Implemented parameterized queries to prevent SQL injection. Added input validation to sanitize user input before processing.
+Exact Source Link: backend/controllers/taskController.js
+Description: The flaw in this code snippet lies in the lack of input validation during task creation, leaving the application vulnerable to SQL injection attacks. Without proper validation, malicious users can inject arbitrary SQL code into the input fields, potentially compromising the integrity of the database.
+How to Fix It: To address this issue, I have implemented parameterized queries in the code. By separating SQL code from user input, parameterized queries prevent attackers from injecting malicious SQL statements. Additionally, I have added input validation to sanitize user input before processing, ensuring that only expected data types and formats are accepted.
 
 FLAW 2: Broken Authentication
-Exact Source Link: https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/controllers/authController.js
-Description: Weak password hashing and lack of brute-force protection make user accounts vulnerable to unauthorized access.
-Fix: Implemented bcrypt for secure password hashing. Enforced strong password policies and implemented account lockout mechanism after a certain number of failed login attempts.
+Exact Source Link: backend/routes/authRoutes.js
+Description: This code snippet illustrates weak password hashing and a lack of brute-force protection, making user accounts vulnerable to unauthorized access. Without proper security measures, attackers can easily crack weakly hashed passwords or launch brute-force attacks to gain unauthorized access to user accounts.
+How to Fix It: To address this vulnerability, I have implemented bcrypt for secure password hashing. Bcrypt is a robust cryptographic hashing algorithm that generates strong, salted hashes, making it extremely difficult for attackers to crack passwords. Additionally, I have enforced strong password policies and implemented an account lockout mechanism after a certain number of failed login attempts, further enhancing authentication security.
 
 FLAW 3: Sensitive Data Exposure
-Exact Source Link: https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/taskRoutes.js
-Description: Task details are transmitted over the network without encryption, exposing sensitive information to eavesdropping.
-Fix: Implemented HTTPS to encrypt communication between client and server. Ensured sensitive data is encrypted at rest and in transit.
+Exact Source Link: backend/routes/taskRoutes.js
+Description: In this code snippet, task details are transmitted over the network without encryption, exposing sensitive information to potential eavesdropping attacks. Without proper encryption mechanisms in place, attackers can intercept and access sensitive data transmitted between the client and server.
+How to Fix It: To mitigate this risk, I have implemented HTTPS to encrypt communication between the client and server. HTTPS encrypts data transmitted over the network, preventing eavesdropping and data interception by malicious actors. Additionally, I have ensured that sensitive data is encrypted at rest and in transit, further protecting it from unauthorized access.
 
 FLAW 4: XML External Entities (XXE)
-Exact Source Link: https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/taskRoutes.js
-Description: The application processes XML input from users without disabling external entity references, leading to XXE attacks.
-Fix: Disabled external entity references in XML parsers used by the application. Used a whitelist approach to allow only trusted XML structures.
+Exact Source Link: backend/routes/taskRoutes.js
+Description: The vulnerability in this code snippet arises from the application processing XML input from users without disabling external entity references. This exposes the application to XML External Entities (XXE) attacks, where attackers can exploit vulnerable XML parsers to access sensitive data or execute arbitrary code.
+How to Fix It: To address this vulnerability, I have disabled external entity references in XML parsers used by the application. By preventing the application from resolving external entities, we mitigate the risk of XXE attacks. Additionally, I have employed a whitelist approach to allow only trusted XML structures, further reducing the attack surface for potential exploitation.
 
 FLAW 5: Cross-Site Scripting (XSS)
-Exact Source Link:https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/frontend/script.js
-Description: Lack of input sanitization in task descriptions allows for XSS attacks.
-Fix: Implemented input validation and output encoding to sanitize user-generated content before displaying it in the browser. Used frameworks or libraries for automatic XSS prevention.
-
-Overall, the project addresses the specified flaws from the OWASP top ten list by implementing appropriate fixes in the codebase. The application provides a solid foundation for understanding and mitigating common security vulnerabilities in web applications.
+Exact Source Link: frontend/script.js
+Description: The flaw in this code snippet stems from the lack of input sanitization in task descriptions, leaving the application vulnerable to Cross-Site Scripting (XSS) attacks. Without proper input validation and output encoding, attackers can inject malicious scripts into input fields, potentially compromising user data or executing unauthorized actions in the context of other users.
+How to Fix It: To mitigate the risk of XSS attacks, I have implemented input validation and output encoding to sanitize user-generated content before displaying it in the browser. Input validation ensures that user-generated content meets expected criteria, preventing malicious script injection. Output encoding converts potentially dangerous characters into their HTML entities, rendering them harmless. Additionally, leveraging frameworks or libraries for XSS prevention adds an extra layer of security.
