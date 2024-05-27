@@ -7,10 +7,15 @@ Installation Instructions:
 To run the application, follow these steps:
 
 Clone the repository to your local machine.
+
 Navigate to the project directory in your terminal.
+
 Install dependencies by running npm install.
+
 Set up environment variables as required (e.g., PORT, JWT_SECRET).
+
 Start the server by running npm start.
+
 Access the application in your browser at http://localhost:3000.
 
 FLAW 1: Injection
