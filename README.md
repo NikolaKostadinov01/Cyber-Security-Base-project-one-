@@ -14,27 +14,27 @@ Access the application in your browser at http://localhost:3000.
 Flaws and Fixes:
 
 FLAW 1: Injection
-Exact Source Link
+Exact Source Link: https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/controllers/taskController.js
 Description: Lack of input validation in task creation allows for potential SQL injection attacks.
 Fix: Implemented parameterized queries to prevent SQL injection. Added input validation to sanitize user input before processing.
 
 FLAW 2: Broken Authentication
-Exact Source Link
+Exact Source Link: https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/controllers/authController.js
 Description: Weak password hashing and lack of brute-force protection make user accounts vulnerable to unauthorized access.
 Fix: Implemented bcrypt for secure password hashing. Enforced strong password policies and implemented account lockout mechanism after a certain number of failed login attempts.
 
 FLAW 3: Sensitive Data Exposure
-Exact Source Link
+Exact Source Link: https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/taskRoutes.js
 Description: Task details are transmitted over the network without encryption, exposing sensitive information to eavesdropping.
 Fix: Implemented HTTPS to encrypt communication between client and server. Ensured sensitive data is encrypted at rest and in transit.
 
 FLAW 4: XML External Entities (XXE)
-Exact Source Link
+Exact Source Link: https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/taskRoutes.js
 Description: The application processes XML input from users without disabling external entity references, leading to XXE attacks.
 Fix: Disabled external entity references in XML parsers used by the application. Used a whitelist approach to allow only trusted XML structures.
 
 FLAW 5: Cross-Site Scripting (XSS)
-Exact Source Link
+Exact Source Link:https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/frontend/script.js
 Description: Lack of input sanitization in task descriptions allows for XSS attacks.
 Fix: Implemented input validation and output encoding to sanitize user-generated content before displaying it in the browser. Used frameworks or libraries for automatic XSS prevention.
 
