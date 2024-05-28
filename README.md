@@ -1,7 +1,7 @@
 # **Cyber Security Base - Course Series**
 University of Helsinki, FI
 
-[Course page](https://cybersecuritybase.mooc.fi/)
+**[Course page](https://cybersecuritybase.mooc.fi/)**
 
 ## **Project I**
 
@@ -27,7 +27,7 @@ For this course project, I have developed a web application using JavaScript tha
 
 ## **FLAW 1: Injection**
 
-**Exact Source Link:** https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/controllers/taskController.js
+**[Exact Source Link](https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/controllers/taskController.js)**
 
 **Description:** The flaw in this code snippet lies in the lack of input validation during task creation, leaving the application vulnerable to SQL injection attacks. Without proper validation, malicious users can inject arbitrary SQL code into the input fields, potentially compromising the integrity of the database.
 
@@ -35,7 +35,7 @@ For this course project, I have developed a web application using JavaScript tha
 
 ## **FLAW 2: Broken Authentication**
 
-**Exact Source Link:** https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/authRoutes.js
+**[Exact Source Link](https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/authRoutes.js)**
 
 **Description:** This code snippet illustrates weak password hashing and a lack of brute-force protection, making user accounts vulnerable to unauthorized access. Without proper security measures, attackers can easily crack weakly hashed passwords or launch brute-force attacks to gain unauthorized access to user accounts.
 
@@ -43,7 +43,7 @@ For this course project, I have developed a web application using JavaScript tha
 
 ## **FLAW 3: Sensitive Data Exposure**
 
-**Exact Source Link:** https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/taskRoutes.js
+**[Exact Source Link](https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/taskRoutes.js)**
 
 **Description:** In this code snippet, task details are transmitted over the network without encryption, exposing sensitive information to potential eavesdropping attacks. Without proper encryption mechanisms in place, attackers can intercept and access sensitive data transmitted between the client and server.
 
@@ -51,7 +51,7 @@ For this course project, I have developed a web application using JavaScript tha
 
 ## **FLAW 4: XML External Entities (XXE)**
 
-**Exact Source Link:** https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/taskRoutes.js
+**[Exact Source Link](https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/backend/routes/taskRoutes.js)**
 
 **Description:** The vulnerability in this code snippet arises from the application processing XML input from users without disabling external entity references. This exposes the application to XML External Entities (XXE) attacks, where attackers can exploit vulnerable XML parsers to access sensitive data or execute arbitrary code.
 
@@ -59,7 +59,7 @@ For this course project, I have developed a web application using JavaScript tha
 
 ## **FLAW 5: Cross-Site Scripting (XSS)**
 
-**Exact Source Link:** https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/frontend/script.js
+**[Exact Source Link](https://github.com/NikolaKostadinov01/Cyber-Security-Base-project-one-/blob/main/frontend/script.js)**
 
 **Description:** The flaw in this code snippet stems from the lack of input sanitization in task descriptions, leaving the application vulnerable to Cross-Site Scripting (XSS) attacks. Without proper input validation and output encoding, attackers can inject malicious scripts into input fields, potentially compromising user data or executing unauthorized actions in the context of other users.
 
