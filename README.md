@@ -64,3 +64,20 @@ For this course project, I have developed a web application using JavaScript tha
 **Description:** The flaw in this code snippet stems from the lack of input sanitization in task descriptions, leaving the application vulnerable to Cross-Site Scripting (XSS) attacks. Without proper input validation and output encoding, attackers can inject malicious scripts into input fields, potentially compromising user data or executing unauthorized actions in the context of other users.
 
 **How to Fix It:** To mitigate the risk of XSS attacks, I have implemented input validation and output encoding to sanitize user-generated content before displaying it in the browser. Input validation ensures that user-generated content meets expected criteria, preventing malicious script injection. Output encoding converts potentially dangerous characters into their HTML entities, rendering them harmless. Additionally, leveraging frameworks or libraries for XSS prevention adds an extra layer of security.
+
+## **References**
+
+**FLAW 1: Injection**
+* Anley, Chris, et al. "Advanced SQL injection in SQL server applications." Technical Report. Next Generation Security Software Ltd. (2002). [1]
+
+**FLAW 2: Broken Authentication**
+* Bonneau, Joseph. "The science of guessing: analyzing an anonymized corpus of 70 million passwords." Proceedings of the 2012 IEEE Symposium on Security and Privacy. IEEE Computer Society, (2012). [2]
+
+**FLAW 3: Sensitive Data Exposure**
+* Rescorla, Eric. "HTTP over TLS." RFC 2818 (Best Current Practice). (2000). [3]
+
+**FLAW 4: XML External Entities (XXE)**
+* Sullivan, Bryan. "Security Briefs - XML Denial of Service Attacks and Defenses." (2009), pages 10-15. [4]
+
+**FLAW 5: Cross-Site Scripting (XSS)**
+* Shanmugam, Jayamsakthi, and Murugesan Ponnavaikko. "Cross Site Scripting-Latest developments and solutions: A survey." (2008), pp. 5-18. [5]
