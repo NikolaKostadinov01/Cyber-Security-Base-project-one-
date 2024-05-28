@@ -68,16 +68,16 @@ For this course project, I have developed a web application using JavaScript tha
 ## **References**
 
 **FLAW 1: Injection**
-* [1] Anley, Chris, et al. "Advanced SQL injection in SQL server applications." Technical Report. Next Generation Security Software Ltd. (2002).
+* [1] Anley, Chris, et al. "Advanced SQL injection in SQL server applications." Technical Report. Next Generation Security Software Ltd. (2002). pp. 7-13
 
 **FLAW 2: Broken Authentication**
-* [2] Bonneau, Joseph. "The science of guessing: analyzing an anonymized corpus of 70 million passwords." Proceedings of the 2012 IEEE Symposium on Security and Privacy. IEEE Computer Society, (2012).
+* [2] Bonneau, Joseph. "The science of guessing: analyzing an anonymized corpus of 70 million passwords." Proceedings of the 2012 IEEE Symposium on Security and Privacy. IEEE Computer Society, (2012). pp. 4-13
 
 **FLAW 3: Sensitive Data Exposure**
-* [3] Rescorla, Eric. "HTTP over TLS." RFC 2818 (Best Current Practice). (2000).
+* [3] Rescorla, Eric. "HTTP over TLS." RFC 2818 (Best Current Practice). (2000). pp. 6-17
 
 **FLAW 4: XML External Entities (XXE)**
-* [4] Sullivan, Bryan. "Security Briefs - XML Denial of Service Attacks and Defenses." (2009), pages 10-15.
+* [4] Sullivan, Bryan. "Security Briefs - XML Denial of Service Attacks and Defenses." (2009), pp. 10-15.
   
 **FLAW 5: Cross-Site Scripting (XSS)**
 * [5] Shanmugam, Jayamsakthi, and Murugesan Ponnavaikko. "Cross Site Scripting-Latest developments and solutions: A survey." (2008), pp. 5-18.
