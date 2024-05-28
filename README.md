@@ -78,5 +78,6 @@ For this course project, I have developed a web application using JavaScript tha
 
 **FLAW 4: XML External Entities (XXE)**
 * [4] Sullivan, Bryan. "Security Briefs - XML Denial of Service Attacks and Defenses." (2009), pages 10-15.
+  
 **FLAW 5: Cross-Site Scripting (XSS)**
 * [5] Shanmugam, Jayamsakthi, and Murugesan Ponnavaikko. "Cross Site Scripting-Latest developments and solutions: A survey." (2008), pp. 5-18.
