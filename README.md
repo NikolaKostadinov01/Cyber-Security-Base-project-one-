@@ -77,16 +77,16 @@
 ## **References**
 
 **FLAW 1: Injection**
-* [1] [Anley, Chris, et al. "Advanced SQL injection in SQL server applications." Technical Report. Next Generation Security Software Ltd. (2002).](https://crypto.stanford.edu/cs155old/cs155-spring09/papers/sql_injection.pdf)
+[1] [Anley, Chris, et al. "Advanced SQL injection in SQL server applications." Technical Report. Next Generation Security Software Ltd. (2002).](https://crypto.stanford.edu/cs155old/cs155-spring09/papers/sql_injection.pdf)
 
 **FLAW 2: Broken Authentication**
-* [2] [Bonneau, Joseph. "The science of guessing: analyzing an anonymized corpus of 70 million passwords." Proceedings of the 2012 IEEE Symposium on Security and Privacy. IEEE Computer Society, (2012).](https://jbonneau.com/doc/B12-IEEESP-analyzing_70M_anonymized_passwords.pdf)
+[2] [Bonneau, Joseph. "The science of guessing: analyzing an anonymized corpus of 70 million passwords." Proceedings of the 2012 IEEE Symposium on Security and Privacy. IEEE Computer Society, (2012).](https://jbonneau.com/doc/B12-IEEESP-analyzing_70M_anonymized_passwords.pdf)
 
 **FLAW 3: Sensitive Data Exposure**
-* [3] [Rescorla, Eric. "HTTP over TLS." RFC 2818 (Best Current Practice). (2000).](https://www.rfc-editor.org/rfc/pdfrfc/rfc2818.txt.pdf)
+[3] [Rescorla, Eric. "HTTP over TLS." RFC 2818 (Best Current Practice). (2000).](https://www.rfc-editor.org/rfc/pdfrfc/rfc2818.txt.pdf)
 
 **FLAW 4: XML External Entities (XXE)**
-* [4] [Sullivan, Bryan. "Security Briefs - XML Denial of Service Attacks and Defenses." (2009).](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/november/xml-denial-of-service-attacks-and-defenses)
+[4] [Sullivan, Bryan. "Security Briefs - XML Denial of Service Attacks and Defenses." (2009).](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/november/xml-denial-of-service-attacks-and-defenses)
   
 **FLAW 5: Cross-Site Scripting (XSS)**
-* [5] [Shanmugam, Jayamsakthi, and Murugesan Ponnavaikko. "Cross Site Scripting-Latest developments and solutions: A survey." (2008).](https://www.researchgate.net/profile/Murugesan-Ponnavaikko/publication/228983958_Cross_Site_Scripting-Latest_developments_and_solutions_A_survey/links/0a85e5319addd42d0e000000/Cross-Site-Scripting-Latest-developments-and-solutions-A-survey.pdf)
+[5] [Shanmugam, Jayamsakthi, and Murugesan Ponnavaikko. "Cross Site Scripting-Latest developments and solutions: A survey." (2008).](https://www.researchgate.net/profile/Murugesan-Ponnavaikko/publication/228983958_Cross_Site_Scripting-Latest_developments_and_solutions_A_survey/links/0a85e5319addd42d0e000000/Cross-Site-Scripting-Latest-developments-and-solutions-A-survey.pdf)
