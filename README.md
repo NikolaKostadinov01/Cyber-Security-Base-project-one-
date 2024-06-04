@@ -1,3 +1,5 @@
+![](https://satinfo24.pl/wp-content/uploads/2018/11/Cyber_Security_Base.jpg)
+
 # **Project I**
 
 **University of Helsinki, FI - Cyber Security Base - Course Series**
