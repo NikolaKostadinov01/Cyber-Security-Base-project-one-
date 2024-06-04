@@ -6,11 +6,11 @@
 
 ## **Project I**
 
-**Project Description:**
+**Project Description**
 
 For this course project, I have developed a web application using JavaScript that addresses the OWASP top ten list of security flaws. The application is built using Node.js with Express.js for the backend and plain HTML, CSS, and JavaScript for the frontend. I have chosen to follow the 2021 OWASP list to ensure the project aligns with the latest security standards.
 
-## **Installation Instructions:**
+## **Installation Instructions**
 
 **To run the application, follow these steps:**
 
